@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafíos - Estructuras de Control de Selección en MakeCode</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Estructuras de Control de Selección en MakeCode</h1>
+            <img src="bloques.png" alt="bloques" class="header-logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="metas.html">Metas de aprendizaje</a></li>
+                <li><a href="repaso.html">Repaso</a></li>
+                <li><a href="estructuras-control.html">Estructuras de control</a></li>
+                <li><a href="comparacion.html">Operadores de comparación</a></li>
+                <li><a href="ejercicios.html">Ejercicios</a></li>
+                <li><a href="desafios.html" class="active">Desafíos</a></li>
+                <li><a href="creditos.html">Créditos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Misión en la Granja</h2>
+        <div class="content-box">
+            <p>En este desafío vas a poner a prueba todo lo que aprendiste.</p>
+            
+            <div class="genially-container" style="position: relative; width: 100%; max-width: 1400px; margin: 0 auto; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe title="¡Ayuda al granjero!" 
+                    src="https://view.genially.com/689c7dfdc3a57d9c017fb64c" 
+                    frameborder="0" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p>Resuelve los desafíos. Por cada desafío obtendrás un número.</p>
+
+            <p>Una vez que tengas el código numérico, ingrésalo aquí para obtener tu certificado.</p>
+            <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+                <input type="number" id="codigo-secreto" placeholder="Ingresa el código numérico" style="padding: 8px; font-size: 1em;">
+                <button id="boton-verificar" style="padding: 10px; font-size: 1em; cursor: pointer; background-color: #553a19; color: white; border: none; border-radius: 5px;">Verificar</button>
+            </div>
+
+            <div id="contenedor-certificado" style="text-align: center; margin-top: 30px; margin-bottom: 20px; display: none;">
+                <p>¡Código correcto! Ahora, ingresa tu nombre y genera tu certificado.</p>
+                <input type="text" id="nombre-estudiante-input" placeholder="Ingresa tu nombre aquí" style="padding: 8px; font-size: 1em; margin-bottom: 10px;">
+                <button id="boton-certificado" style="padding: 10px 20px; font-size: 1.2em; cursor: pointer; background-color: #1d8760; color: white; border: none; border-radius: 5px;">Generar Certificado</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Estructuras de Control de Selección en MakeCode - Licencia: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+    </footer>
+
+    <div id="certificado-a-descargar" class="certificado">
+        <div class="certificado-borde">
+            <div class="certificado-contenido">
+                <h1>Certificado de Finalización</h1>
+                <p class="subtitulo">Se otorga el presente certificado a</p>
+                <h2 id="nombre-certificado">
+                    </h2>
+                <p class="texto-cuerpo">
+                    Por haber completado exitosamente la misión de **'Misión en la Granja'** y demostrar un excelente dominio de las estructuras de control de selección y el pensamiento computacional.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+/* Estilos para el cuerpo y la fuente*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+}
+/* Estilos para el encabezado*/
+header {
+    background-color: #105c50;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Contenedor para alinear el contenido del encabezado */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header .header-logo {
+    max-height: 40px; 
+    width: auto;
+}
+/* Para la barra de navegación */
+nav {
+    background-color:#359a6f;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+/* Para los enlaces de la navegación */
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+/* Efectos de navegación al pasar el ratón */
+nav ul li a:hover {
+    background-color:#1a4434;
+    border-radius: 25px;
+}
+
+nav ul li a.active {
+    background-color: #1a4434;
+    color: #ffffff;
+    border-radius: 25px;
+}
+/* Estilos para el contenido principal y los títulos */
+main {
+    padding: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+h2, h3 {
+    color: #2e7d32;
+    text-align: center;
+}
+
+pre {
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-left: 5px solid #2e7d32;
+    overflow-x: auto;
+}
+/* Para el pie de página */
+footer {
+    background-color: #105c50;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed; /* Fijo en la parte inferior de la ventana */
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    color: white;
+}
+/* Caja de contenido genérica */
+.content-box {
+    border: 1px solid #2e7d32;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    margin: 20px auto;
+    max-width: 800px;
+    position: relative;
+}
+/* Para que las imágenes que no son operadores se adapten al ancho */
+img:not(.operator-item img) {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 300px; 
+}
+/* Contenedor de preguntas */
+.question {
+    border: 1px solid #2e7d32;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    margin: 20px auto;
+    max-width: 800px;
+    position: relative;
+}
+/* Contenedor de inputs de formulario */
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+    font-family: inherit;
+}
+/* Este estilo crea la "caja" con borde, fondo, y centra el contenido para las imagenes de operadores de comparación. */
+.operator-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    border: 1px solid #2e7d32;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    box-sizing: border-box; 
+    height: 100%; 
+}
+
+.operator-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto; 
+    max-height: 100px; 
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.operator-item p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+/* Lista de operadores en comparacion.html */
+.operators-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.operators-list li {
+    flex: 0 0 auto;
+    max-width: 180px; 
+    margin-bottom: 10px;
+}
+
+/* Opciones de respuesta en ejercicios.html */
+.input-container .operator-item {
+    flex-direction: row; 
+    background-color: transparent; 
+    border: none; 
+    box-shadow: none; 
+    padding: 0; 
+    margin: 0 0 0 10px; 
+    width: auto; 
+}
+
+.input-container .operator-item img {
+    max-height: 50px; 
+    max-width: 50px; 
+    margin: 0 10px 0 0; 
+    border: none; 
+    box-shadow: none; 
+}
+
+.input-container .operator-item p {
+    font-weight: normal; 
+    font-size: 1em; 
+}
+
+/* Estilos para la página de Desafíos */
+.genially-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 20px 0;
+}
+
+.genially-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#codigo-secreto {
+    border: 1px solid #0c735d;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 1em;
+    width: 200px;
+    margin-right: 10px;
+}
+
+#boton-verificar {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #09442e; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#boton-verificar:hover {
+    background-color: #359a6f;
+}
+
+#boton-certificado {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #359a6f; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#boton-certificado:hover {
+    background-color: #2e7d32; 
+}
+
+/* Estilos para el CERTIFICADO*/
+.certificado {
+    display: none;
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    width: 29.7cm; 
+    height: 21cm;
+    box-sizing: border-box;
+    background-color: white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    padding: 1.5cm;
+}
+
+.certificado-borde {
+    border: 10px double #359a6f;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.certificado-contenido {
+    color: #333;
+    max-width: 80%;
+}
+
+.certificado-contenido h1 {
+    font-size: 3em;
+    color: #1a4434;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.certificado-contenido .subtitulo {
+    font-size: 1.5em;
+    color: #555;
+    font-style: italic;
+}
+
+.certificado-contenido h2 {
+    font-size: 2.5em;
+    color: #359a6f;
+    margin: 0.5em 0;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.certificado-contenido .texto-cuerpo {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 2em;
+}

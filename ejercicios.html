@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios - Estructuras de Control de Selección en MakeCode</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado del sitio con título, imagen y menú de navegación -->
+    <header>
+        <h1>Estructuras de Control de Selección en MakeCode</h1>
+        <img src="bloques.png" alt="bloques" class="header-logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="metas.html">Metas de aprendizaje</a></li>
+                <li><a href="repaso.html">Repaso</a></li>
+                <li><a href="estructuras-control.html">Estructuras de control</a></li>
+                <li><a href="comparacion.html">Operadores de comparación</a></li>
+                <li><a href="ejercicios.html"  class="active">Ejercicios</a></li>
+                <li><a href="desafios.html">Desafíos</a></li>
+                <li><a href="creditos.html">Créditos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <h2>Para practicar</h2>
+        <div class="content-box">
+            <h3>Actividades</h3>
+            <img src="lista_de_quehaceres.png" alt="lista_de_quehaceres">
+            <p>A continuación encontrarás actividades que te permitirán practicar con los conceptos de estructuras de control de selección y operadores de comparación.
+
+                Puedes realizar las actividades las veces que consideres necesario. </p>    
+                
+        </div>
+        <div class="question">
+            <h3>Pregunta de Elección Múltiple</h3>
+            <p>En el siguiente ejemplo queremos que SI la temperatura es mayor a 26° nos muestre la cadena "calor"</p>
+            <p>¿Qué bloque cambiarías para que SI la temperatura es menor a 10° nos muestre la cadena "frío"?</p>
+            <form>
+                <div class="input-container">
+                    <input type="radio" id="igual" name="comparacion" value="igual">
+                    <label for="igual">Igual</label>
+                    <img src="igual.png" alt="igual">
+                </div>
+                
+                <div class="input-container">
+                    <input type="radio" id="menor" name="comparacion" value="menor">
+                    <label for="menor">Menor</label>
+                    <img src="menor.1.png" alt="menor.1">
+                </div>
+                
+                <div class="input-container">
+                    <input type="radio" id="mayor" name="comparacion" value="mayor">
+                    <label for="mayor">Mayor</label>
+                    <img src="mayor.1.png" alt="mayor1">
+                </div>
+                <!-- Botón para comprobar la respuesta -->
+                <button type="button" id="botonComprobar">Comprobar respuesta</button>
+                <p class="result-message"></p> <!-- Para mostrar el mensaje de respuesta -->
+            </form>
+        </div>
+        <div class="content-box">
+            <h3>¿Está frío?</h3>
+            <p><strong>Para practicar todo lo que aprendiste en este recurso te propongo hacer el siguiente programa.</strong></p><br>
+            <p>Queremos saber que ropa ponernos para ir al liceo.</p>
+            <p>Realiza un programa para que al presionar un botón en la placa micro:bit se muestre la cadena "Frío" <strong>SI </strong>la temperatura es menor a 15° , sino se debe mostrar la cadena templado.</p><br>
+            <p>Algunos bloques que puedes utilizar:</p>
+            <img src="sINO.png" alt="sINO">
+            <img src="botona.png" alt="botona"><br>
+            <img src="frio.png" alt="frio"><br>
+            <img src="temperatura.1.png" alt="temperatura.1"><br>
+            <img src="menor.1.png" alt="menor.1"><br>
+        </div>
+        <div class="content-box">
+            <h3>¿Día o noche?</h3>
+            <p>Ahora queremos saber si es de día o de noche para que la luz del jardín se prenda.</p><br>
+            <p>Realiza un programa para por siempre en la placa micro:bit se muestre un sol <strong>SI </strong> el nivel de luz es mayor a 15° , sino se debe mostrar una luna.</p>
+            <p>Algunos bloques que puedes utilizar:</p>
+            <img src="leds.png" alt="leds">
+            <img src="siempre.png" alt="siempre"><br>
+            <img src="sINO.png" alt="sINO">
+            <img src="luz.png" alt="luz"><br>
+            <img src="mayor.1.png" alt="mayor.1"><br>
+        </div>
+    </main>
+    <!-- Pie de página con licencia -->
+    <footer>
+        <p>&copy; 2024 Estructuras de Control de Selección en MakeCode - Licencia: <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+    </footer>
+    <!-- Script JS para comprobar respuestas de actividades -->
+    <script src="script.js"></script>
+</body>
+</html>
