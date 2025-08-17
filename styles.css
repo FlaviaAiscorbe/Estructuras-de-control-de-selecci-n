@@ -29,7 +29,7 @@ header h1 {
 }
 
 header .header-logo {
-    max-height: 40px; 
+     max-height: 100px !important; 
     width: auto;
 }
 /* Para la barra de navegación */
@@ -325,5 +325,6 @@ button {
     line-height: 1.5;
     margin-bottom: 2em;
 }
+
 
 
