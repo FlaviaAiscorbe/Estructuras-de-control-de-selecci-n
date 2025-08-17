@@ -300,20 +300,20 @@ button {
 }
 
 .certificado-contenido h1 {
-    font-size: 3em;
+    font-size: 1.5em; /* Reducido de 3em */
     color: #1a4434;
     margin-bottom: 0.5em;
     text-transform: uppercase;
 }
 
 .certificado-contenido .subtitulo {
-    font-size: 1.5em;
+    font-size: 0.8em; /* Reducido de 1.5em */
     color: #555;
     font-style: italic;
 }
 
 .certificado-contenido h2 {
-    font-size: 2.5em;
+    font-size: 1.2em; /* Reducido de 2.5em */
     color: #359a6f;
     margin: 0.5em 0;
     border-bottom: 2px solid #ccc;
@@ -321,7 +321,7 @@ button {
 }
 
 .certificado-contenido .texto-cuerpo {
-    font-size: 1.2em;
+    font-size: 0.7em; /* Reducido de 1.2em */
     line-height: 1.5;
     margin-bottom: 2em;
 }
