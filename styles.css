@@ -276,8 +276,8 @@ button {
     position: absolute;
     left: -9999px;
     top: 0;
-    width: 29.7cm; 
-    height: 21cm;
+    width: 15cm;  
+    height: 10cm; 
     box-sizing: border-box;
     background-color: white; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
@@ -325,3 +325,4 @@ button {
     line-height: 1.5;
     margin-bottom: 2em;
 }
+
